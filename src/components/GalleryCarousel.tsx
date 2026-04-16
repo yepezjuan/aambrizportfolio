@@ -17,12 +17,13 @@ type ImageItem = {
 
 // ✅ Use root-based paths so they work in production
 const images: ImageItem[] = [
-  { src: "/film_photos/portrait1.jpg", width: 1200, height: 1600 },
-  { src: "/film_photos/portrait2.jpg", width: 1200, height: 1600 },
-  { src: "/film_photos/portrait3.jpg", width: 1200, height: 1600 },
-  { src: "/film_photos/portrait3.jpg", width: 1200, height: 1600 },
-  { src: "/film_photos/portrait3.jpg", width: 1200, height: 1600 },
-  { src: "/film_photos/portrait3.jpg", width: 1200, height: 1600 },
+  { src: "src/assets/beachwedding.webp", width: 1200, height: 1600 },
+  { src: "src/assets/blackwhitegirl.webp", width: 1200, height: 1600 },
+  { src: "src/assets/diademuertos.webp", width: 1200, height: 1600 },
+  { src: "src/assets/gio-3.webp", width: 1200, height: 1600 },
+  { src: "src/assets/karely-3.webp", width: 1200, height: 1600 },
+  { src: "src/assets/kim-1339.webp", width: 1200, height: 1600 },
+  { src: "src/assets/darathy-20.webp", width: 1200, height: 1600 },
 ];
 
 /* ================= Component ================= */
@@ -56,7 +57,7 @@ export const GalleryCarousel = () => {
                 href={img.src}
                 data-pswp-width={img.width}
                 data-pswp-height={img.height}
-                className="block overflow-hidden rounded-3xl"
+                className="block overflow-hidden rounded-3xl p-1"
                 draggable={false} // prevent dragging the link
                 onDragStart={(e) => e.preventDefault()} // extra safety
               >

@@ -1,5 +1,11 @@
+import { GalleryCarousel } from "@/components/GalleryCarousel";
+
 function Portraits() {
-  return <div>Hi portraits</div>;
+  return (
+    <div>
+      <GalleryCarousel />
+    </div>
+  );
 }
 
 export default Portraits;

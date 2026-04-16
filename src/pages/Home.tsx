@@ -1,5 +1,4 @@
 import { Hero } from "../components/Hero";
-import { FAQ } from "../components/FAQ";
 import { Pricing } from "../components/Pricing";
 import { GalleryCarousel } from "../components/GalleryCarousel";
 import { About } from "../components/About";
@@ -12,8 +11,6 @@ function Home() {
     <>
       <Hero />
       <GalleryCarousel />
-      <GalleryCarousel />
-      <GalleryCarousel />
       <About />
       <HowItWorks />
       <Pricing />
@@ -21,7 +18,6 @@ function Home() {
         url="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3G7q4Kw6bBI6zeVIS7ZIJElzV2sf0JJOMNqK0j4LJNCLrsfTRxczJLF-hTkFW3GDQPVmlL_ruc?gv=true"
         id="booking"
       />
-      <FAQ />
     </>
   );
 }

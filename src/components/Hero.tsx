@@ -1,5 +1,4 @@
 import { buttonVariants } from "./ui/button";
-import BookingModal from "./BookingModal";
 
 export const Hero = () => {
   return (
