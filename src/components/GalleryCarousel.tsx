@@ -8,26 +8,15 @@ import { FreeMode } from "swiper/modules";
 import PhotoSwipeLightbox from "photoswipe/lightbox";
 import "photoswipe/style.css";
 
-/* ================= Data ================= */
-type ImageItem = {
+/* ================= Types ================= */
+export type ImageItem = {
   src: string;
   width: number;
   height: number;
 };
 
-// ✅ Use root-based paths so they work in production
-const images: ImageItem[] = [
-  { src: "src/assets/beachwedding.webp", width: 1200, height: 1600 },
-  { src: "src/assets/blackwhitegirl.webp", width: 1200, height: 1600 },
-  { src: "src/assets/diademuertos.webp", width: 1200, height: 1600 },
-  { src: "src/assets/gio-3.webp", width: 1200, height: 1600 },
-  { src: "src/assets/karely-3.webp", width: 1200, height: 1600 },
-  { src: "src/assets/kim-1339.webp", width: 1200, height: 1600 },
-  { src: "src/assets/darathy-20.webp", width: 1200, height: 1600 },
-];
-
 /* ================= Component ================= */
-export const GalleryCarousel = () => {
+export const GalleryCarousel = ({ images }: { images: ImageItem[] }) => {
   useEffect(() => {
     const lightbox = new PhotoSwipeLightbox({
       gallery: "#gallery",
@@ -44,11 +33,14 @@ export const GalleryCarousel = () => {
       <div id="gallery">
         <Swiper
           modules={[FreeMode]}
-          spaceBetween={2}
-          slidesPerView={3.1}
           freeMode
           simulateTouch={true}
-          touchStartPreventDefault={false} // allow natural swipe
+          touchStartPreventDefault={false}
+          breakpoints={{
+            0:   { slidesPerView: 1.3, spaceBetween: 8 },
+            480: { slidesPerView: 2.1, spaceBetween: 10 },
+            768: { slidesPerView: 3.1, spaceBetween: 12 },
+          }}
           className="px-4"
         >
           {images.map((img, index) => (
@@ -58,15 +50,15 @@ export const GalleryCarousel = () => {
                 data-pswp-width={img.width}
                 data-pswp-height={img.height}
                 className="block overflow-hidden rounded-3xl p-1"
-                draggable={false} // prevent dragging the link
-                onDragStart={(e) => e.preventDefault()} // extra safety
+                draggable={false}
+                onDragStart={(e) => e.preventDefault()}
               >
                 <img
                   src={img.src}
                   alt={`image-${index}`}
-                  className="w-[600px]  object-cover rounded-2xl active:scale-120 transition-transform duration-200"
+                  className="w-full object-cover rounded-2xl active:scale-105 transition-transform duration-200"
                   loading="lazy"
-                  draggable={false} // prevent dragging image
+                  draggable={false}
                   onDragStart={(e) => e.preventDefault()}
                 />
               </a>

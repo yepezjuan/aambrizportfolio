@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Events from "./pages/Events";
 import Product from "./pages/Product";
 import Portraits from "./pages/Portraits";
+2;
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 
