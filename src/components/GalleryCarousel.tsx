@@ -37,7 +37,7 @@ export const GalleryCarousel = ({ images }: { images: ImageItem[] }) => {
           simulateTouch={true}
           touchStartPreventDefault={false}
           breakpoints={{
-            0:   { slidesPerView: 1.3, spaceBetween: 8 },
+            0: { slidesPerView: 1.3, spaceBetween: 8 },
             480: { slidesPerView: 2.1, spaceBetween: 10 },
             768: { slidesPerView: 3.1, spaceBetween: 12 },
           }}

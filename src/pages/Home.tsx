@@ -20,22 +20,34 @@ import product4 from "@/assets/products/product-4.webp";
 import product5 from "@/assets/products/product-5.webp";
 import product7 from "@/assets/products/product-7.webp";
 
+import allcity402 from "@/assets/allcity402.webp";
+import allcity301 from "@/assets/allcity-301.webp";
+import lostigres from "@/assets/lostigres.webp";
+import spaces46 from "@/assets/spaces46.webp";
+
 const portraitImages: ImageItem[] = [
-  { src: blackwhitegirl, width: 1200, height: 1600 },
-  { src: diademuertos, width: 1200, height: 1600 },
-  { src: gio3, width: 1200, height: 1600 },
-  { src: karely3, width: 1200, height: 1600 },
-  { src: kim1339, width: 1200, height: 1600 },
-  { src: darathy20, width: 1200, height: 1600 },
+  { src: blackwhitegirl, width: 1500, height: 2300 },
+  { src: diademuertos, width: 1500, height: 2300 },
+  { src: gio3, width: 1500, height: 2300 },
+  { src: karely3, width: 1500, height: 2300 },
+  { src: kim1339, width: 1500, height: 2300 },
+  { src: darathy20, width: 1500, height: 2300 },
 ];
 
 const productImages: ImageItem[] = [
-  { src: product2, width: 1200, height: 1600 },
-  { src: product7, width: 1200, height: 1600 },
-  { src: product1, width: 1200, height: 1600 },
-  { src: product3, width: 1200, height: 1600 },
-  { src: product5, width: 1200, height: 1600 },
-  { src: product4, width: 1200, height: 1600 },
+  { src: product4, width: 1500, height: 2300 },
+  { src: product5, width: 1500, height: 2300 },
+  { src: product3, width: 1500, height: 2300 },
+  { src: product2, width: 1500, height: 2300 },
+  { src: product7, width: 1500, height: 2300 },
+  { src: product1, width: 1500, height: 2300 },
+];
+
+const eventImages: ImageItem[] = [
+  { src: allcity402, width: 2300, height: 1500 },
+  { src: allcity301, width: 2300, height: 1500 },
+  { src: lostigres, width: 2300, height: 1500 },
+  { src: spaces46, width: 2300, height: 1500 },
 ];
 
 function Home() {
@@ -45,6 +57,7 @@ function Home() {
 
       <GalleryCarousel images={portraitImages} />
       <GalleryCarousel images={productImages} />
+      <GalleryCarousel images={eventImages} />
       <About />
       <HowItWorks />
       <Pricing />
