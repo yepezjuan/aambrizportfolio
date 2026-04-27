@@ -1,4 +1,3 @@
-import { Statistics } from "./Statistics";
 import pilot from "../assets/pilot.png";
 
 export const About = () => {
@@ -25,7 +24,6 @@ export const About = () => {
                 ideas a reality
               </p>
             </div>
-            <Statistics />
           </div>
         </div>
       </div>

@@ -5,6 +5,7 @@ import { About } from "../components/About";
 import { HowItWorks } from "../components/HowItWorks";
 import BookingSection from "../components/BookingSection";
 import { VideoReel } from "@/components/VideoReel";
+import { Testimonials } from "@/components/Testimonials";
 
 import blackwhitegirl from "@/assets/blackwhitegirl.webp";
 import diademuertos from "@/assets/diademuertos.webp";
@@ -66,6 +67,7 @@ function Home() {
         id="booking"
       />
       <VideoReel />
+      <Testimonials />
     </>
   );
 }
