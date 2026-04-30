@@ -51,7 +51,7 @@ export const Navbar = () => {
               className="ml-2 font-bold text-xl flex"
             >
               {/** TODO: ADD A MINI PIC OF ALEJANDRO HERE */}
-              Ambriz: Photography
+              ALEX TAKES VISUALS
             </a>
           </NavigationMenuItem>
 

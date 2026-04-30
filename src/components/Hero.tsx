@@ -5,8 +5,8 @@ export const Hero = () => {
     <section className="container place-items-left px-10 py-20 md:py-32 gap-10">
       <div className="text-center lg:text-start space-y-6">
         <main className="text-3xl md:text-6xl ">
-          <h1 className="justify-left ">A. Ambriz</h1>{" "}
-          <h2 className="">Photography</h2>
+          <h1 className="justify-left ">ALEX TAKES</h1>{" "}
+          <h2 className="">VISUALS</h2>
         </main>
 
         <p className="text-blue-600 text-md  text-muted-foreground md:w-10/12 mx-auto lg:mx-0 ">
