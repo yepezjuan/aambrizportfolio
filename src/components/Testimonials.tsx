@@ -18,14 +18,14 @@ const testimonials: TestimonialProps[] = [
   {
     image: "https://freesvg.org/img/abstract-user-flat-4.png",
     name: "Cassandra",
-    userName: "@Cass_Doe",
+    userName: "@honey.frias",
     comment:
       "Working with Alex is always a pleasure! He provides such a fun, safe, creative space for every project. Alex brings great concepts/ideas to each session that really help the project come to life and produces beautifully unique and striking photos.",
   },
   {
     image: "https://freesvg.org/img/abstract-user-flat-4.png",
     name: "Gio",
-    userName: "@gio__",
+    userName: "@the.gio.experience",
     comment:
       "I first met Alex when he was shooting for San Fernando Valley Pride 2024, and he was kind enough to email me the shots of me singing. Then, after a follow on Instagram, I realized this guy was the real deal. I loved his aesthetic. After a while, I was able to shoot with him, and not only does he have a clear vision, he’s a sweetheart and a total professional!",
   },
@@ -33,21 +33,21 @@ const testimonials: TestimonialProps[] = [
   {
     image: "https://freesvg.org/img/abstract-user-flat-4.png",
     name: "Kim",
-    userName: "@kimk",
+    userName: "@hey.quinkaay",
     comment:
       "I have worked with Alex for quite some time! While he allowed me to create my own ideas and expand my creativity, he also incorporated his own twist and creativity onto his work. He works well with others, is able to listen, and executes impeccably. He has grown as a photographer, his work is carefully crafted and well thought out. I am happy we still continue to work together.",
   },
   {
     image: "https://freesvg.org/img/abstract-user-flat-4.png",
     name: "Vero",
-    userName: "@merovero",
+    userName: "@fabuluousvero",
     comment:
       "I’ve lost count how many times I’ve worked with Alex, I’ve worked with him on fashion shoots, creative shoots, brand shoots and even hired him and his team to photograph the most important day of my life, my wedding. Each time he has delivered exactly what I envisioned and more. His communication is clear he reaches out before the shoot with a mood board and suggestions so you’re not blindsided. His professionalism and open mindedness makes me feel comfortable in front of the camera! I look forward to many more projects with him",
   },
   {
     image: "https://freesvg.org/img/abstract-user-flat-4.png",
     name: "Sylvia",
-    userName: "@sylvia1234",
+    userName: "@sylvia_zhuu",
     comment:
       "I recently had my graduation photos taken, and I couldn’t be happier with the entire experience! From start to finish, Alex was professional, creative, and made the whole session feel relaxed and enjoyable. He gave great direction on posing, which I appreciate because I am not photogenic. I especially appreciated the quick turnaround time and the quality of the edits. If you’re looking for someone to document a major milestone like graduation, I highly recommend Alex as a photographer!",
   },
