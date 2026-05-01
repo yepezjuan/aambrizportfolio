@@ -20,7 +20,7 @@ const productImages = [
   { src: product7, width: 1500, height: 2300 },
 ];
 
-function Product() {
+function Commercial() {
   useEffect(() => {
     const lightbox = new PhotoSwipeLightbox({
       gallery: "#product-grid",
@@ -33,10 +33,7 @@ function Product() {
 
   return (
     <section className="py-8 px-4">
-      <div
-        id="product-grid"
-        className="grid grid-cols-2 md:grid-cols-3 gap-3"
-      >
+      <div id="product-grid" className="grid grid-cols-2 md:grid-cols-3 gap-3">
         {productImages.map((img, index) => (
           <a
             key={index}
@@ -58,4 +55,4 @@ function Product() {
   );
 }
 
-export default Product;
+export default Commercial;

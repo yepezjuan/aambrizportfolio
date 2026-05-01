@@ -1,9 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Events from "./pages/Events";
-import Product from "./pages/Product";
+import Commercial from "./pages/Commercial";
 import Portraits from "./pages/Portraits";
-2;
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 
@@ -15,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/events" element={<Events />} />
-        <Route path="/product" element={<Product />} />
+        <Route path="/Commercial" element={<Commercial />} />
         <Route path="/portraits" element={<Portraits />} />
       </Routes>
       <Footer />
