@@ -61,13 +61,13 @@ function Home() {
       <GalleryCarousel images={eventImages} />
       <About />
       <HowItWorks />
+      <ContactForm />
       <BookingSection
         url="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3G7q4Kw6bBI6zeVIS7ZIJElzV2sf0JJOMNqK0j4LJNCLrsfTRxczJLF-hTkFW3GDQPVmlL_ruc?gv=true"
         id="booking"
       />
       <VideoReel />
       <Testimonials />
-      <ContactForm />
     </>
   );
 }

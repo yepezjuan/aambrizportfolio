@@ -22,7 +22,7 @@ const features: FeatureProps[] = [
   },
   {
     icon: <BoxIcon className="w-10 h-10 text-primary" />,
-    title: "Product",
+    title: "Commercial",
     description:
       "Clean, detail-focused imagery that highlights your product’s design and quality. Perfect for e-commerce, branding, and marketing materials.",
   },
