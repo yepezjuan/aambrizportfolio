@@ -31,10 +31,7 @@ function Portraits() {
 
   return (
     <section className="py-8 px-4">
-      <div
-        id="portrait-grid"
-        className="grid grid-cols-2 md:grid-cols-3 gap-3"
-      >
+      <div id="portrait-grid" className="grid grid-cols-2 md:grid-cols-3 gap-3">
         {portraitImages.map((img, index) => (
           <a
             key={index}

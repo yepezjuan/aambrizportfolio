@@ -12,14 +12,14 @@ import event7 from "@/assets/city-wedding.webp";
 import event8 from "@/assets/CSULA.webp";
 
 const eventImages: { src: string; width: number; height: number }[] = [
-  { src: event1, width: 1200, height: 1600 },
-  { src: event2, width: 1200, height: 1600 },
-  { src: event3, width: 1200, height: 1600 },
-  { src: event4, width: 1200, height: 1600 },
-  { src: event5, width: 1200, height: 1600 },
-  { src: event6, width: 1200, height: 1600 },
-  { src: event7, width: 1200, height: 1600 },
-  { src: event8, width: 1200, height: 1600 },
+  { src: event1, width: 1600, height: 1200 },
+  { src: event2, width: 1600, height: 1200 },
+  { src: event3, width: 1600, height: 1200 },
+  { src: event4, width: 1600, height: 1200 },
+  { src: event5, width: 1600, height: 1200 },
+  { src: event6, width: 1600, height: 1200 },
+  { src: event7, width: 1600, height: 1200 },
+  { src: event8, width: 1600, height: 1200 },
 ];
 
 function Events() {

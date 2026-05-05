@@ -118,7 +118,7 @@ export const Navbar = () => {
           <div className="hidden md:flex gap-2">
             <div className="flex justify-center">
               <BookingModal
-                url="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3G7q4Kw6bBI6zeVIS7ZIJElzV2sf0JJOMNqK0j4LJNCLrsfTRxczJLF-hTkFW3GDQPVmlL_ruc?gv=true"
+                url="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2QaAs4XHwc2PLqfvBPIYGXyfNJfxkT5avU52Ez_sViOhsJvb4jxPx3HJxkJQl7Fwc12nq_WMrm?gv=true"
                 buttonLabel="Book a Session"
               />
             </div>

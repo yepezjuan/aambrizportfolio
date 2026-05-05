@@ -1,6 +1,4 @@
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-
-import alejandro from "../assets/alej.webp";
 import gio3 from "../assets/Gio-3.webp";
 import kim1339 from "../assets/Kim-1339.webp";
 import vero from "../assets/Vero-9.webp";

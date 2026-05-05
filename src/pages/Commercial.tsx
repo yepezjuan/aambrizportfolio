@@ -16,7 +16,7 @@ const productImages = [
   { src: product3, width: 1500, height: 2300 },
   { src: product4, width: 1500, height: 2300 },
   { src: product5, width: 1500, height: 2300 },
-  { src: product6, width: 1500, height: 2300 },
+  { src: product6, width: 1500, height: 1500 },
   { src: product7, width: 1500, height: 2300 },
 ];
 
