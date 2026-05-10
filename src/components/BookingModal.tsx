@@ -3,11 +3,13 @@ import { useState } from "react";
 interface BookingModalProps {
   url: string;
   buttonLabel?: string;
+  className?: string;
 }
 
 const BookingModal: React.FC<BookingModalProps> = ({
   url,
   buttonLabel = "Book a Session",
+  className = "px-6 py-3 rounded-2xl bg-black text-white text-sm font-medium hover:opacity-80 transition",
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -16,7 +18,7 @@ const BookingModal: React.FC<BookingModalProps> = ({
       {/* Trigger Button */}
       <button
         onClick={() => setIsOpen(true)}
-        className="px-6 py-3 rounded-2xl bg-black text-white text-sm font-medium hover:opacity-80 transition"
+        className={className}
       >
         {buttonLabel}
       </button>

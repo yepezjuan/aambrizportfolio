@@ -87,14 +87,13 @@ export const Navbar = () => {
                       {label}
                     </a>
                   ))}
-                  <a
-                    href="#booking"
+                  <BookingModal
+                    url="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2QaAs4XHwc2PLqfvBPIYGXyfNJfxkT5avU52Ez_sViOhsJvb4jxPx3HJxkJQl7Fwc12nq_WMrm?gv=true"
+                    buttonLabel="Book a session"
                     className={`w-full md:w-1/3 ${buttonVariants({
                       variant: "outline",
                     })}`}
-                  >
-                    Book a session
-                  </a>
+                  />
                 </nav>
               </SheetContent>
             </Sheet>

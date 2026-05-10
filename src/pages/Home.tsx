@@ -61,11 +61,6 @@ function Home() {
       <About />
       <VideoReel />
       <ContactForm />
-      <BookingSection
-        url="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2QaAs4XHwc2PLqfvBPIYGXyfNJfxkT5avU52Ez_sViOhsJvb4jxPx3HJxkJQl7Fwc12nq_WMrm?gv=true"
-        id="booking"
-      />
-
       <Testimonials />
     </>
   );
