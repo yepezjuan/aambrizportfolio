@@ -34,40 +34,7 @@ export const Footer = () => {
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              Twitter
-            </a>
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">About</h3>
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Features
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Pricing
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              FAQ
+              Tiktok
             </a>
           </div>
         </div>
@@ -82,7 +49,7 @@ export const Footer = () => {
             href="..." // TODO: ADD OG LINK
             className="text-primary transition-all border-primary hover:border-b-2"
           >
-            Orange Grove Studios
+            Orange Grove
           </a>
         </h3>
       </section>

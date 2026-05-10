@@ -4,6 +4,7 @@ import kim1339 from "../assets/Kim-1339.webp";
 import vero from "../assets/Vero-9.webp";
 import cass from "../assets/Cassandra-13.webp";
 import sylv from "../assets/sylvia.webp";
+import halley from "../assets/halley.webp";
 
 import {
   Card,
@@ -65,7 +66,16 @@ const testimonials: TestimonialProps[] = [
     comment:
       "I recently had my graduation photos taken, and I couldn’t be happier with the entire experience! From start to finish, Alex was professional, creative, and made the whole session feel relaxed and enjoyable. He gave great direction on posing, which I appreciate because I am not photogenic. I especially appreciated the quick turnaround time and the quality of the edits. If you’re looking for someone to document a major milestone like graduation, I highly recommend Alex as a photographer!",
     instagramUrl:
-      "https://www.instagram.com/alex_takesvisuals?igsh=NTc4MTIwNjQ2YQ==",
+      "https://www.instagram.com/reel/DNHeF26RfxD/?utm_source=ig_web_copy_link",
+  },
+  {
+    image: halley,
+    name: "Halley",
+    userName: "@halleytrinity",
+    comment:
+      "I’ve shot 4 different concepts with Alex so far and he nailed every single one! He puts so much intention in his shoots to get the right shots & he makes it very easy and comfortable to work with him. I definitely plan to continue shooting with him, he delivers every time!",
+    instagramUrl:
+      "https://www.instagram.com/p/DYFxweNklH3/?utm_source=ig_web_copy_link",
   },
 ];
 

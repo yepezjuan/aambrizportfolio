@@ -1,18 +1,17 @@
 import { Hero } from "../components/Hero";
 import { GalleryCarousel, ImageItem } from "../components/GalleryCarousel";
 import { About } from "../components/About";
-import { HowItWorks } from "../components/HowItWorks";
 import BookingSection from "../components/BookingSection";
 import { VideoReel } from "@/components/VideoReel";
 import { Testimonials } from "@/components/Testimonials";
 import { ContactForm } from "@/components/ContactForm";
 
 import blackwhitegirl from "@/assets/blackwhitegirl.webp";
-import diademuertos from "@/assets/diademuertos.webp";
+import Halley from "@/assets/Halley-42.webp";
 import gio3 from "@/assets/Gio-3.webp";
 import karely3 from "@/assets/Karely-3.webp";
 import kim1339 from "@/assets/Kim-1339.webp";
-import darathy20 from "@/assets/Darathy-20.webp";
+import andrea from "@/assets/Andrea-5.webp";
 
 import product1 from "@/assets/products/product-1.webp";
 import product2 from "@/assets/products/product-2.webp";
@@ -28,11 +27,11 @@ import spaces46 from "@/assets/spaces46.webp";
 
 const portraitImages: ImageItem[] = [
   { src: blackwhitegirl, width: 1500, height: 2300 },
-  { src: diademuertos, width: 1500, height: 2300 },
+  { src: Halley, width: 1500, height: 2300 },
+  { src: andrea, width: 1500, height: 2300 },
   { src: gio3, width: 1500, height: 2300 },
   { src: karely3, width: 1500, height: 2300 },
   { src: kim1339, width: 1500, height: 2300 },
-  { src: darathy20, width: 1500, height: 2300 },
 ];
 
 const productImages: ImageItem[] = [
@@ -60,13 +59,13 @@ function Home() {
       <GalleryCarousel images={productImages} />
       <GalleryCarousel images={eventImages} />
       <About />
-      <HowItWorks />
+      <VideoReel />
       <ContactForm />
       <BookingSection
         url="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2QaAs4XHwc2PLqfvBPIYGXyfNJfxkT5avU52Ez_sViOhsJvb4jxPx3HJxkJQl7Fwc12nq_WMrm?gv=true"
         id="booking"
       />
-      <VideoReel />
+
       <Testimonials />
     </>
   );
