@@ -3,16 +3,40 @@ import emailjs from "@emailjs/browser";
 import { Input } from "./ui/input";
 import { buttonVariants } from "./ui/button";
 
+const SHOOT_TYPES = [
+  "Portraits",
+  "Headshots",
+  "Grad",
+  "Couple",
+  "Engagement",
+  "Wedding",
+  "Family",
+  "Maternity",
+  "E-commerce",
+  "Other",
+] as const;
+
 interface FormState {
   name: string;
   email: string;
+  phone: string;
+  shootType: string;
   message: string;
 }
+
+const formatPhone = (value: string) => {
+  const digits = value.replace(/\D/g, "").slice(0, 10);
+  if (digits.length <= 3) return digits;
+  if (digits.length <= 6) return `(${digits.slice(0, 3)}) ${digits.slice(3)}`;
+  return `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`;
+};
 
 export const ContactForm = () => {
   const [form, setForm] = useState<FormState>({
     name: "",
     email: "",
+    phone: "",
+    shootType: "",
     message: "",
   });
   const [status, setStatus] = useState<
@@ -36,12 +60,14 @@ export const ContactForm = () => {
         {
           from_name: form.name,
           from_email: form.email,
+          phone: form.phone,
+          shoot_type: form.shootType,
           message: form.message,
         },
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
       );
       setStatus("success");
-      setForm({ name: "", email: "", message: "" });
+      setForm({ name: "", email: "", phone: "", shootType: "", message: "" });
     } catch {
       setStatus("error");
     }
@@ -94,13 +120,55 @@ export const ContactForm = () => {
         </div>
 
         <div className="flex flex-col gap-1">
+          <label htmlFor="phone" className="text-sm font-medium">
+            Phone Number
+          </label>
+          <Input
+            id="phone"
+            name="phone"
+            type="tel"
+            placeholder="(xxx) xxx-xxxx"
+            value={form.phone}
+            onChange={(e) =>
+              setForm((prev) => ({ ...prev, phone: formatPhone(e.target.value) }))
+            }
+            required
+          />
+        </div>
+
+        <div className="flex flex-col gap-1">
+          <label htmlFor="shootType" className="text-sm font-medium">
+            Type of Photoshoot
+          </label>
+          <select
+            id="shootType"
+            name="shootType"
+            value={form.shootType}
+            onChange={(e) =>
+              setForm((prev) => ({ ...prev, shootType: e.target.value }))
+            }
+            required
+            className="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+          >
+            <option value="" disabled>
+              Select a session type
+            </option>
+            {SHOOT_TYPES.map((type) => (
+              <option key={type} value={type}>
+                {type}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <div className="flex flex-col gap-1">
           <label htmlFor="message" className="text-sm font-medium">
             Message
           </label>
           <textarea
             id="message"
             name="message"
-            placeholder="Tell me about your project..."
+            placeholder="Tell me about the shoot in mind..."
             value={form.message}
             onChange={handleChange}
             required

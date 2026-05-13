@@ -1,20 +1,16 @@
 {
-  "name": "shadcn-landing-page-template",
-  "description": "Landing page template utilizing Shadcn, React, Typescript, and Tailwind CSS for rapid development and responsive design.",
+  "name": "Alex takes visuals",
+  "description": "Page for Alex photography work, portraits, commercial and events",
   "author": {
-    "name": "Leopoldo Miranda",
-    "email": "leomirandadev@gmail.com",
-    "url": "https://github.com/leoMirandaa"
+    "name": "Juan Yepez",
+    "email": "yepezjuan6@gmail.com"
   },
   "license": "MIT",
   "keywords": [
     "react",
     "typescript",
-    "shadcn",
-    "shadcn/ui",
     "tailwind",
     "landing-page",
-    "template",
     "responsive-design"
   ],
   "private": true,

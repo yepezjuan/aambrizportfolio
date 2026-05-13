@@ -1,5 +1,3 @@
-import { buttonVariants } from "./ui/button";
-
 export const Hero = () => {
   return (
     <section className="container place-items-left px-10 py-20 md:py-32 gap-10">

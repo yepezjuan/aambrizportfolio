@@ -1,13 +1,12 @@
 import { Hero } from "../components/Hero";
 import { GalleryCarousel, ImageItem } from "../components/GalleryCarousel";
 import { About } from "../components/About";
-import BookingSection from "../components/BookingSection";
 import { VideoReel } from "@/components/VideoReel";
 import { Testimonials } from "@/components/Testimonials";
 import { ContactForm } from "@/components/ContactForm";
 
 import blackwhitegirl from "@/assets/blackwhitegirl.webp";
-import Halley from "@/assets/Halley-42.webp";
+import Halley from "@/assets/tennis.webp";
 import gio3 from "@/assets/Gio-3.webp";
 import karely3 from "@/assets/Karely-3.webp";
 import kim1339 from "@/assets/Kim-1339.webp";
