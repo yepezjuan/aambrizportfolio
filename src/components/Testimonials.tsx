@@ -4,6 +4,7 @@ import kim1339 from "../assets/Kim-1339.webp";
 import vero from "../assets/Vero-9.webp";
 import cass from "../assets/Cassandra-13.webp";
 import sylv from "../assets/sylvia.webp";
+
 import halley from "../assets/halley.webp";
 
 import {
