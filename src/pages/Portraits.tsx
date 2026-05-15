@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import PhotoSwipeLightbox from "photoswipe/lightbox";
-import "photoswipe/style.css";
 
 import blackwhitegirl from "@/assets/blackwhitegirl.webp";
 import diademuertos from "@/assets/diademuertos.webp";
@@ -16,19 +15,19 @@ import leslie from "@/assets/Leslie-36.jpg";
 import halley from "@/assets/tennis.webp";
 
 const portraitImages = [
-  { src: blackwhitegirl, width: 1200, height: 1600 },
+  { src: blackwhitegirl, width: 1500, height: 2300 },
 
-  { src: gio3, width: 1200, height: 1600 },
-  { src: andrea, width: 1200, height: 1600 },
-  { src: karely3, width: 1200, height: 1600 },
-  { src: halley, width: 1200, height: 1600 },
-  { src: kim1339, width: 1200, height: 1600 },
-  { src: diademuertos, width: 1200, height: 1600 },
-  { src: darathy20, width: 1200, height: 1600 },
-  { src: wallace, width: 1200, height: 1600 },
-  { src: leslie, width: 1200, height: 1600 },
-  { src: wedd, width: 1200, height: 1600 },
-  { src: horse, width: 1200, height: 1600 },
+  { src: gio3, width: 1500, height: 2300 },
+  { src: andrea, width: 1500, height: 2300 },
+  { src: karely3, width: 1500, height: 2300 },
+  { src: halley, width: 1500, height: 2300 },
+  { src: kim1339, width: 1500, height: 2300 },
+  { src: diademuertos, width: 1500, height: 2300 },
+  { src: darathy20, width: 1500, height: 2300 },
+  { src: wallace, width: 1500, height: 2300 },
+  { src: leslie, width: 1500, height: 2300 },
+  { src: wedd, width: 1500, height: 2300 },
+  { src: horse, width: 1500, height: 2300 },
 ];
 
 function Portraits() {
@@ -56,6 +55,8 @@ function Portraits() {
             <img
               src={img.src}
               alt={`portrait-${index}`}
+              width={img.width}
+              height={img.height}
               className="w-full h-full object-cover aspect-[3/4] rounded-2xl hover:scale-105 transition-transform duration-300"
               loading="lazy"
             />

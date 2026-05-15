@@ -22,7 +22,8 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="https://www.instagram.com/alex_takesvisuals"
+              target="_blank"
               className="opacity-60 hover:opacity-100"
             >
               Instagram
@@ -31,7 +32,8 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="https://www.tiktok.com/@alextakesvisuals"
+              target="_blank"
               className="opacity-60 hover:opacity-100"
             >
               Tiktok
@@ -41,17 +43,7 @@ export const Footer = () => {
       </section>
 
       <section className="container pb-14 text-center">
-        <h3>
-          &copy; 2026 by{" "}
-          <a
-            rel="noreferrer noopener"
-            target="_blank"
-            href="..." // TODO: ADD OG LINK
-            className="text-primary transition-all border-primary hover:border-b-2"
-          >
-            Orange Grove
-          </a>
-        </h3>
+        <h3>Alex Takes Visuals &copy; 2026</h3>
       </section>
     </footer>
   );

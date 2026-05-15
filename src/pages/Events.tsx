@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import PhotoSwipeLightbox from "photoswipe/lightbox";
-import "photoswipe/style.css";
 
 import event1 from "@/assets/allcity-301.webp";
 import event2 from "@/assets/spaces51.webp";
@@ -12,14 +11,14 @@ import event7 from "@/assets/city-wedding.webp";
 import event8 from "@/assets/CSULA.webp";
 
 const eventImages: { src: string; width: number; height: number }[] = [
-  { src: event1, width: 1600, height: 1200 },
-  { src: event2, width: 1600, height: 1200 },
-  { src: event3, width: 1600, height: 1200 },
-  { src: event4, width: 1600, height: 1200 },
-  { src: event5, width: 1600, height: 1200 },
-  { src: event6, width: 1600, height: 1200 },
-  { src: event7, width: 1600, height: 1200 },
-  { src: event8, width: 1600, height: 1200 },
+  { src: event1, width: 2300, height: 1500 },
+  { src: event2, width: 2048, height: 1626 },
+  { src: event3, width: 2310, height: 1535 },
+  { src: event4, width: 2300, height: 1500 },
+  { src: event5, width: 2300, height: 1500 },
+  { src: event6, width: 2300, height: 1536 },
+  { src: event7, width: 2048, height: 1547 },
+  { src: event8, width: 2300, height: 1500 },
 ];
 
 function Events() {
@@ -47,6 +46,8 @@ function Events() {
             <img
               src={img.src}
               alt={`event-${index}`}
+              width={img.width}
+              height={img.height}
               className="w-full h-full object-cover aspect-video rounded-2xl hover:scale-105 transition-transform duration-300"
               loading="lazy"
             />

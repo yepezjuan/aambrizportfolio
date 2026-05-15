@@ -23,6 +23,7 @@ import allcity402 from "@/assets/allcity402.webp";
 import allcity301 from "@/assets/allcity-301.webp";
 import lostigres from "@/assets/lostigres.webp";
 import spaces46 from "@/assets/spaces46.webp";
+import wedd from "@/assets/city-wedding.webp";
 
 const portraitImages: ImageItem[] = [
   { src: blackwhitegirl, width: 1500, height: 2300 },
@@ -43,10 +44,11 @@ const productImages: ImageItem[] = [
 ];
 
 const eventImages: ImageItem[] = [
+  { src: lostigres, width: 2300, height: 1500 },
+  { src: wedd, width: 2048, height: 1547 },
   { src: allcity402, width: 2300, height: 1500 },
   { src: allcity301, width: 2300, height: 1500 },
-  { src: lostigres, width: 2300, height: 1500 },
-  { src: spaces46, width: 2300, height: 1500 },
+  { src: spaces46, width: 2310, height: 1535 },
 ];
 
 function Home() {
@@ -56,7 +58,7 @@ function Home() {
 
       <GalleryCarousel images={portraitImages} />
       <GalleryCarousel images={productImages} />
-      <GalleryCarousel images={eventImages} />
+      <GalleryCarousel images={eventImages} aspectRatio="3/2" />
       <About />
       <VideoReel />
       <ContactForm />

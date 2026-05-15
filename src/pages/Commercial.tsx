@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import PhotoSwipeLightbox from "photoswipe/lightbox";
-import "photoswipe/style.css";
 
 import product1 from "@/assets/products/product-1.webp";
 import product2 from "@/assets/products/product-2.webp";
@@ -45,6 +44,8 @@ function Commercial() {
             <img
               src={img.src}
               alt={`product-${index}`}
+              width={img.width}
+              height={img.height}
               className="w-full h-full object-cover aspect-[3/4] rounded-2xl hover:scale-105 transition-transform duration-300"
               loading="lazy"
             />

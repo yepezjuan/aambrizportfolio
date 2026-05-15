@@ -6,7 +6,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode } from "swiper/modules";
 
 import PhotoSwipeLightbox from "photoswipe/lightbox";
-import "photoswipe/style.css";
 
 /* ================= Types ================= */
 export type ImageItem = {
@@ -16,7 +15,13 @@ export type ImageItem = {
 };
 
 /* ================= Component ================= */
-export const GalleryCarousel = ({ images }: { images: ImageItem[] }) => {
+export const GalleryCarousel = ({
+  images,
+  aspectRatio,
+}: {
+  images: ImageItem[];
+  aspectRatio?: string;
+}) => {
   useEffect(() => {
     const lightbox = new PhotoSwipeLightbox({
       gallery: "#gallery",
@@ -50,14 +55,18 @@ export const GalleryCarousel = ({ images }: { images: ImageItem[] }) => {
                 data-pswp-width={img.width}
                 data-pswp-height={img.height}
                 className="block overflow-hidden rounded-3xl p-1"
+                style={aspectRatio ? { aspectRatio } : undefined}
                 draggable={false}
                 onDragStart={(e) => e.preventDefault()}
               >
                 <img
                   src={img.src}
                   alt={`image-${index}`}
-                  className="w-full object-cover rounded-2xl active:scale-105 transition-transform duration-200"
-                  loading="lazy"
+                  width={img.width}
+                  height={img.height}
+                  className="w-full h-full object-cover rounded-2xl active:scale-105 transition-transform duration-200"
+                  loading={index === 0 ? "eager" : "lazy"}
+                  fetchPriority={index === 0 ? "high" : "auto"}
                   draggable={false}
                   onDragStart={(e) => e.preventDefault()}
                 />
