@@ -1,5 +1,4 @@
 import alejandro from "../assets/alej.webp";
-import { InstagramIcon, TikTokIcon } from "./Icons";
 
 export const About = () => {
   return (
