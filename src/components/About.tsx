@@ -25,10 +25,14 @@ export const About = () => {
                 visual storytelling. Over the last nine years, I have worked
                 with individuals, brands, & companies to create authentic
                 moments that feel purposeful, emotional, & true to each client's
-                vision. Photography has always been part of my life in some
+                vision.
+                <br /><br />
+                Photography has always been part of my life in some
                 capacity, but truly developed while studying in college. This
                 expanded through event photography, which I got into after
-                earning my degrees in Journalism & Communications. I love what I
+                earning my degrees in Journalism & Communications.
+                <br /><br />
+                I love what I
                 do, every day & all the time. My passion has allowed me to meet
                 so many interesting people & given me the opportunity to make
                 work that reflects what I value. My photos are sharp,
