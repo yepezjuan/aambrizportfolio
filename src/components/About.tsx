@@ -36,32 +36,6 @@ export const About = () => {
                 expressive, moody, & rich in color. They are candid moments with
                 intentional lighting & a polished presentation.
               </p>
-
-              <div className="mt-6">
-                <p className="text-xl text-muted-foreground mb-3">
-                  Follow me here!
-                </p>
-                <div className="flex gap-4">
-                  <a
-                    href="https://www.instagram.com/alex_takesvisuals"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    aria-label="Instagram"
-                    className="opacity-60 hover:opacity-100 transition-opacity"
-                  >
-                    <InstagramIcon className="w-6 h-6" />
-                  </a>
-                  <a
-                    href="https://www.tiktok.com/@alextakesvisuals"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    aria-label="TikTok"
-                    className="opacity-60 hover:opacity-100 transition-opacity"
-                  >
-                    <TikTokIcon className="w-6 h-6" />
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </div>
