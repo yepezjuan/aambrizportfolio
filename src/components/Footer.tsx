@@ -22,7 +22,8 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="https://www.instagram.com/alex_takesvisuals"
+              target="_blank"
               className="opacity-60 hover:opacity-100"
             >
               Instagram
@@ -31,7 +32,8 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="https://www.tiktok.com/@alextakesvisuals"
+              target="_blank"
               className="opacity-60 hover:opacity-100"
             >
               Tiktok
